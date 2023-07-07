@@ -18,13 +18,14 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 
 ## Setup
 
+Copy the binary to a directory in your $PATH:
 ```sh
-npm install -g awsp
+cp awsp /usr/local/bin
 ```
 
 Add the following to your `.bashrc` or `.zshrc` config
 ```sh
-alias awsp="source _awsp"
+alias awsp="/usr/local/bin/awsp && source ~/.awsp"
 ```
 
 ## Usage
