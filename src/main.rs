@@ -11,7 +11,7 @@ fn main() {
 
     let file_path = format!("{}/.aws/config", home.display());
 
-    let profiles = Ini::load_from_file(file_path).unwrap();
+    let profiles = Ini::load_from_file(file_path).expect("Unable to load config file");
 
     let mut profile_names = Vec::new();
     for (section, _) in profiles.iter() {
