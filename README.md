@@ -25,7 +25,7 @@ cp awsp /usr/local/bin
 
 Add the following to your `.bashrc` or `.zshrc` config
 ```sh
-alias awsp="/usr/local/bin/awsp && source ~/.awsp"
+alias awsp="/usr/local/bin/awsp && set -o allexport && source ~/.awsp && set +o allexport"
 ```
 
 ## Usage
